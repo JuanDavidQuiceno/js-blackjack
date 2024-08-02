@@ -16,8 +16,8 @@
     <div class="row mt-2">
         <div class="col text-center">
             <button id="btnNuevo" class="btn-danger">Nuevo Juego</button>
-            <button id="btnPedir" class="btn-primary">Pedir Carta</button>
-            <button id="btnDetener" class="btn-primary">Detener</button>
+            <button id="btnPedir" disabled="disabled" class="btn-primary">Pedir Carta</button>
+            <button id="btnDetener" disabled="disabled" class="btn-primary">Detener</button>
         </div>
     </div>
 
@@ -56,6 +56,12 @@
 
     <script src="assets/js/underscore-min.js"></script>
     <script src="assets/js/juego.js"></script>
+    <script>
+        document.getElementById('btnNuevo').addEventListener('click', function () {
+            miModulo.nuevoJuego();
+        });
+        miModulo.iniciarJuego();
+    </script>
 </body>
 
 </html>
