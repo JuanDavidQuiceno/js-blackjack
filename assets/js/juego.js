@@ -78,8 +78,8 @@ const miModulo = (() => {
         console.log('acumularPuntos carta', carta);
         console.log('acumularPuntos turno', turno);
         puntosJugadores[turno] = puntosJugadores[turno] + valorCarta(carta);
-        puntosHtml[turno].innerText = puntosJugadores[turno];
-        console.log('acumularPuntos', puntosJugadores[turno]);
+        puntosHtml[turno].innerText = puntosJugadores[turno] + ' puntos';
+        // console.log('acumularPuntos', puntosJugadores[turno]);
         return puntosJugadores[turno];
     }
 
